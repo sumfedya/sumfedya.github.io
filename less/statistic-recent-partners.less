@@ -1,0 +1,347 @@
+.statistic {
+    margin: 0 auto;
+    padding-top: 69px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 231px;
+    background-color: #f4f5f8;
+    background-image: -webkit-linear-gradient(left, #211b19 0%, #4e3427 100%);
+    background-image: -o-linear-gradient(left, #211b19 0%, #4e3427 100%);
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.stat-div {
+    width: 145px;
+    margin-right: 70px;
+    position: relative;
+}
+
+.stat-div::after {
+    position: absolute;
+    top: 179px;
+    left: 58px;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.stat-div:nth-child(5) {
+    margin-right: 0;
+}
+
+.stat-img {
+    display: block;
+    fill: #c7b299;
+    width: 44px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+.counter {
+    display: block;
+    margin-top: 30px;
+    width: 145px;
+    height: 34px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Montserrat - Ultra Light", 'Arial', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.statistic-description {
+    display: block;
+    margin-top: 21px;
+    width: 145px;
+    height: 10px;
+    text-align: center;
+    color: #c7b299;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.recent-posts {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 82px;
+    padding-bottom: 80px;
+    min-height: 593px;
+    width: 1170px;
+}
+
+.recent-posts-header {
+    display: block;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    color: #555555;
+    font-family: "Raleway - Semi Bold", 'Arial', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.recent-posts-txt {
+    margin: 30px 200px 40px 200px;
+    height: 43px;
+    width: 757px;
+    color: #8c8c8c;
+    text-align: center;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.recent-post {
+    width: 370px;
+    height: 395px;
+    border: 1px solid #f8f8f8;
+    background-color: white;
+    margin-right: 27px;
+    position: relative;
+}
+
+.recent-post:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.recent-post:hover {
+    background-color: #362f2d;
+
+    > img {
+        filter: brightness(40%);
+    }
+
+    .recent-post-header {
+        color: #c7b299;
+    }
+
+    .recent-post-txt {
+        color: #ffffff;
+    }
+
+    .recent-post-date {
+        background-color: #c7b299;
+    }
+
+    .recent-post-time {
+        background-color: #a48d72;
+    }
+}
+
+.recent-post-img-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 187px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.recent-post-img-link {
+    display: block;
+    width: 11px;
+    height: 11px;
+    outline: none;
+    background-color: #8e8e90;
+    border-radius: 50%;
+    margin-right: 10px;
+    opacity: 0.7;
+    border: 1px solid transparent;
+    box-shadow: 0 0 1px transparent;
+}
+
+.recent-post-img-link:hover {
+    opacity: 1;
+    border: 1px solid transparent;
+    box-shadow: 0 0 1px transparent;
+}
+
+.recent-post-img-link:active {
+    opacity: 1;
+    background-color: transparent;
+    border: 1px solid #d3c1ad;
+    box-shadow: 0 0 1px #d3c1ad;
+    transform: scale(1.2);
+}
+
+.recent-post-header {
+    margin: 30px 0 0 29px;
+    display: block;
+    width: 257px;
+    height: 20px;
+    color: #555555;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.recent-post-txt {
+    margin: 19px 0 0 29px;
+    width: 297px;
+    height: 36px;
+    color: #8c8c8c;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.recent-post-link {
+    display: block;
+    margin: 27px 0 0 30px;
+    text-decoration: none;
+    color: #c7b299;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    position: relative;
+}
+
+.recent-post-link::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    border: 5px solid transparent;
+    border-left: 5px solid #c7b299;
+}
+
+.recent-post-link:hover {
+    color: #d1d1d1;
+}
+
+.recent-post-link:hover::after {
+    border-left: 5px solid #d1d1d1;
+}
+
+.recent-post-link:active {
+    color: aqua;
+}
+
+.recent-post-link:active::after {
+    border-left: 5px solid aqua;
+}
+
+.recent-post-datetime {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 60px;
+    border-radius: 3px;
+}
+
+.recent-post-date {
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 35px;
+    background-color: #363636;
+    color: #ffffff;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+    border-radius: 3px 3px 0 0;
+}
+
+.recent-post-time {
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    background-color: #252525;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    border-radius: 0 0 3px 3px;
+}
+
+.recent-post-right,
+.recent-post-left {
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    fill: #c7b299;
+}
+
+.recent-post-right:hover,
+.recent-post-left:hover {
+    fill: #d1d1d1;
+}
+
+.partners {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 489px;
+    position: relative;  
+}
+
+.partners::before {
+    margin: 0 auto;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-partners.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+    z-index: -1;
+}
+
+.partner-logo-link {
+    display: block;
+    height: 210px;
+    width: 210px;
+    margin-right: 90px;
+    outline: none; 
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.partner-logo-link:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.partner-logo-link:active {
+    border: 1px solid white;
+    transition: border-radius .6s linear;
+    border-radius: 50px;
+}
+
+.partner-logo-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+.partner-logo-img {
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,340 @@
+.footer-top {
+    margin: 0 auto;
+    min-height: 508px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #191919;
+}
+
+.footer-top-article {
+    width: 270px;
+    margin-top: 80px;
+}
+
+.footer-top-logo-link {
+    display: flex;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    fill: white;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.footer-top-logo-link:hover {
+    color: #c7b299;
+    fill: #c7b299;
+}
+
+.footer-top-logo-link:active {
+    color: aqua;
+    fill: aqua;
+}
+
+.footer-top-logo-label {
+    display: block;
+    margin-left: 2px;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -1.36px;
+}
+
+.footer-top-article-txt {
+    margin: 29px 0 33px 0;
+    color: #555555;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.footer-top-article-txt:hover {
+    color: white;
+}
+
+.footer-top-article-link {
+    display: block;
+    margin: 27px 0 0 0;
+    text-decoration: none;
+    color: #c7b299;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    position: relative;
+}
+
+.footer-top-article-link::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    border: 5px solid transparent;
+    border-left: 5px solid #c7b299;
+}
+
+.footer-top-article-link:hover {
+    color: #d1d1d1;
+}
+
+.footer-top-article-link:hover::after {
+    border-left: 5px solid #d1d1d1;
+}
+
+.footer-top-article-link:active {
+    color: aqua;
+}
+
+.footer-top-article-link:active::after {
+    border-left: 5px solid aqua;
+}
+
+.footer-top-column {
+    width: 270px;
+    margin-left: 33px;
+    margin-top: 107px;
+}
+
+.footer-top-column:nth-last-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.footer-header {
+    display: block;
+    height: 17px;
+    color: #ffffff;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 33px;
+}
+
+.footer-recent-posts-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    margin-bottom: 42px;
+}
+
+.footer-recent-posts-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    outline: none;
+    width: 270px;
+    height: 2px;
+    background-color: #252525;
+}
+
+.footer-recent-posts-link:nth-last-child(1)::after {
+    display: none;
+
+}
+
+.footer-recent-posts-datetime {
+    height: 11px;
+    color: #363636;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.footer-recent-posts-txt {
+    margin: 10px 0 0 0;
+    height: 34px;
+    color: #555555;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.footer-recent-posts-link:hover {
+    .footer-recent-posts-datetime {
+        color: #ffffff;
+    }
+
+    .footer-recent-posts-txt {
+        color: #c7b299;
+    }
+}
+
+.footer-recent-posts-link:active {
+    .footer-recent-posts-datetime {
+        color: aqua;
+    }
+
+    .footer-recent-posts-txt {
+        color: aqua;
+    }
+}
+
+.footer-twit {
+    margin-bottom: 42px;
+    position: relative;
+}
+
+.footer-twit::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -21px;
+    outline: none;
+    width: 270px;
+    height: 2px;
+    background-color: #252525;
+}
+
+.footer-twit:nth-last-child(1)::after {
+    display: none;
+}
+
+.footer-twit:hover {
+    .footer-twit-txt {
+        color: #c7b299;
+    }
+
+    .footer-twit-datetime {
+        color: #ffffff;
+    }
+}
+
+.footer-twit-txt {
+    margin: 0;
+    color: #555555;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.footer-twit-datetime {
+    display: block;
+    margin-top: 10px;
+    color: #363636;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.twit-user {
+    color: #00bff3;
+}
+
+.footer-twit-link {
+    text-decoration: none;
+    color: #959595;
+}
+
+.footer-twit-link:hover {
+    color: white;
+}
+
+.footer-twit-link:active {
+    color: aqua;
+}
+
+.footer-widget-link {
+    display: block;
+    height: 98px;
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+.footer-widget-link:nth-of-type(odd) {
+    margin-right: 10px;
+}
+
+.footer-widget-link:hover {
+    animation: scaling 1s;
+    animation-fill-mode: forwards;
+}
+
+.footer-widget-link:active {
+    filter: brightness(60%);
+}
+
+.footer-widget-img {
+    display: block;
+}
+
+.footer-bottom {
+    margin: 0 auto;
+    min-height: 111px;
+    background-color: #111111;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-bottom-list {
+    margin-top: 45px;
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 360px;
+}
+
+.footer-bottom-list:nth-child(2) {
+    margin-right: 0;
+}
+
+.footer-bottom-list li:nth-last-child(1)::after {
+    display: none;
+
+}
+
+.footer-bottom-list li {
+    display: inline;
+    margin-right: 25px;
+    position: relative;
+}
+
+.footer-bottom-list li::after {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: -15px;
+    content: '';
+    height: 14px;
+    width: 1px;
+    background-color: #252525;
+}
+
+.footer-list-link {
+    text-decoration: none;
+    height: 14px;
+    color: #555555;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.waxom {
+    color: #959595;
+}
+
+.footer-list-link:hover {
+    color: #c7b299;
+
+    .waxom {
+        color: white;
+    }
+}
+
+.footer-list-link:active {
+    color: aqua;
+
+    .waxom {
+        color: aqua;
+    }
+}
