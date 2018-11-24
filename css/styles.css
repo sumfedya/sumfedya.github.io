@@ -89,6 +89,10 @@ header::before {
   font-weight: 400;
   letter-spacing: -1.36px;
 }
+.mobile-menu-lines,
+#chckbx-menu {
+  display: none;
+}
 .nav-menu {
   display: inline-block;
   list-style-type: none;
@@ -107,12 +111,10 @@ header::before {
   outline: none;
   color: white;
 }
-.cart:hover,
 .menu-link:hover {
   color: #c7b299;
   cursor: pointer;
 }
-.cart:active,
 .menu-link:active {
   color: aqua;
 }
@@ -818,7 +820,7 @@ header::before {
 }
 .recent-posts-txt {
   margin: 30px 200px 40px 200px;
-  height: 43px;
+  min-height: 43px;
   width: 757px;
   color: #8c8c8c;
   text-align: center;
@@ -834,6 +836,9 @@ header::before {
   background-color: white;
   margin-right: 27px;
   position: relative;
+}
+.recent-post > img {
+  box-sizing: border-box;
 }
 .recent-post:nth-of-type(3n) {
   margin-right: 0;
@@ -1317,4 +1322,175 @@ header::before {
 }
 .footer-list-link:active .waxom {
   color: aqua;
+}
+@media screen and (max-width: 767.98px) {
+  header {
+    margin: 0 auto;
+    width: inherit;
+    min-height: 140px;
+    position: relative;
+  }
+  .header-inside {
+    padding-top: 30px;
+  }
+  .head-row {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .mobile-menu-lines {
+    width: 64px;
+    height: 39px;
+    margin: auto 0 auto 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mobile-menu-line {
+    display: block;
+    width: 64px;
+    height: 9px;
+    background-color: white;
+  }
+  #chckbx-menu:checked ~ .header-nav {
+    display: block;
+    width: 100%;
+  }
+  .header-nav {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto 5px auto;
+    height: auto;
+  }
+  .nav-menu li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    background-color: #8b8b8b;
+    margin-top: 5px;
+    margin-left: 0;
+    border-radius: 3px;
+  }
+  .menu-link {
+    width: 100%;
+  }
+  .cart,
+  .form-search {
+    display: none;
+  }
+  .carousel {
+    display: none;
+  }
+  .logos {
+    flex-wrap: wrap;
+  }
+  .logos a {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .logos a:hover {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .ideas,
+  .adv {
+    display: none;
+  }
+  .latest-projects-txt {
+    width: 100%;
+  }
+  .projects,
+  .latest-projects-btns,
+  .latest-projects-load {
+    display: none;
+  }
+  .video1 {
+    object-fit: cover;
+  }
+  .mobile {
+    padding-top: 60px;
+    min-height: 800px;
+  }
+  .mobile-description {
+    position: relative;
+  }
+  .mobile-description::before {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 35%;
+    left: 0;
+    background-image: url(../images/iPhone_in_hand.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .mobile-header {
+    margin: 0 auto 25px auto;
+  }
+  .mobile-txt {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .mobile-list {
+    margin-left: 55%;
+  }
+  .iPhone-in-hand {
+    display: none;
+  }
+  .recent-posts {
+    width: 90%;
+    padding-bottom: 20px;
+  }
+  .recent-posts-header {
+    margin-bottom: 15px;
+  }
+  .recent-posts-txt {
+    margin: 0 auto;
+  }
+  .recent-post {
+    margin: 10px auto;
+  }
+  .recent-post:nth-of-type(3n) {
+    margin: 0 auto;
+  }
+  .recent-post-right,
+  .recent-post-left {
+    display: none;
+  }
+  .statistic {
+    display: none;
+  }
+  .partners {
+    justify-content: space-around;
+    min-height: 180px;
+  }
+  .partner-logo-link {
+    height: 87px;
+    width: 100px;
+    margin-right: 0;
+  }
+  .partner-logo-img {
+    height: 87px;
+    width: 100px;
+  }
+  .footer-top {
+    display: none;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+  .footer-bottom-list {
+    margin-right: 0;
+  }
 }
