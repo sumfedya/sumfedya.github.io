@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Waxom PSD template</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -32,7 +32,14 @@
                     </svg>
                     <span class="header-logo-label">Waxom</span>
                 </a>
-                <nav>
+
+                <label for="chckbx-menu" class="mobile-menu-lines">
+                    <div class="mobile-menu-line"></div>
+                    <div class="mobile-menu-line"></div>
+                    <div class="mobile-menu-line"></div>                   
+                </label>
+                <input type="checkbox" id="chckbx-menu">                    
+                <nav class="header-nav">
                     <ul class="nav-menu">
                         <li><a class="menu-link" href="#">Home</a></li>
                         <li><a class="menu-link" href="#">About us</a></li>
@@ -443,7 +450,7 @@
                 </p>
                 <ul class="mobile-list">
                     <li>Nam liber tempor cum soluta nobis eleifend option;</li>
-                    <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+                    <li>Option congue nihil imperdiet doming id quod mazim placer&shy;at facer;</li>
                     <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
                     <li>Investigationes demonstraverunt lectores</li>
                 </ul>
